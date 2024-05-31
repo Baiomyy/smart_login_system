@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <span class="d-none" id="username"></span>
+
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+
+            <input id="signupName" class="form-control my-3 signupClass" placeholder="Enter your name" type="text">
+            <span class="text-danger d-none">Your name must start with a letter and can only contain letters, spaces,and
+                hyphens</span>
+
+            <input id="signupEmail" class="form-control my-3 signupClass" placeholder="Enter your email" type="email">
+            <span class="text-danger d-none">Please enter a valid email address. The format should be something like
+                'username@domain.com'.</span>
+
+            <input id="signupPassword" class="form-control my-3 signupClass" placeholder="Enter  password"
+                type="password">
+            <span class="text-danger d-none">Your password must be at least 6 characters long and can only contain
+                letters and numbers.</span>
+
+            <p id="exist"></p>
+
+            <button onclick="addUser()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+
+            <p class="text-white">You have an account? <a class='text-white' href='index.html'>Signin</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
